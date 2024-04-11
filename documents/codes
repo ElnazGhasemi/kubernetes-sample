@@ -1,0 +1,16 @@
+kubectl get all
+kubectl get service
+minikube status
+mkdir k8s-config
+cd k8s-config/
+vim mongo-secret.yaml
+kubectl apply -f mongo-secret.yaml
+kubectl get secret
+vim mongo.yaml
+kubectl apply -f mongo.yaml 
+kubectl get all
+kubectl get pod
+kubectl describe pod
+kubectl get service
+kubectl describe service mongodb-service
+kubectl get pod -o wide
