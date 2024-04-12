@@ -91,3 +91,4 @@ kubctl apply -f [file name]
 
 kubctl apply -f config-file.yaml
 
+- nodePort : must be between 30000-32767
