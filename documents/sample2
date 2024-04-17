@@ -1,6 +1,20 @@
 kubectl get namespace
 kubectl cluster-info
-kubectl create namespace my-namespace
+kubectl create namespace my-namespac
+
+e
 #create configmap in my-namespace
 kubectl apply -f mysql-configmap.yaml --namespace=my-namespace
 kubectl get configmap -n my-namespace
+#install kubens : first install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/nobody/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+sudo apt-get install build-essential
+#then isntall kubetx
+brew install kubectx
+kubens
+#to switch default namespace
+kubens my-namespace
+#install ingress controller in minikube
+minikube addons enable ingress
