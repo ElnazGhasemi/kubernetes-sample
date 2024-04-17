@@ -93,3 +93,4 @@ kubctl apply -f config-file.yaml
 
 #for External Service node port shoul be in specific range
 - nodePort : must be between 30000-32767
+#internal service or cluster ip is DEFAULT : no need to define it
