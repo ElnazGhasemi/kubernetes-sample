@@ -14,3 +14,4 @@ kubectl describe pod
 kubectl get service
 kubectl describe service mongodb-service
 kubectl get pod -o wide
+kubectl apply -f mongo-express.yaml
