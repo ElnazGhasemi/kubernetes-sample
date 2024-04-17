@@ -1,8 +1,6 @@
 kubectl get namespace
 kubectl cluster-info
-kubectl create namespace my-namespac
-
-e
+kubectl create namespace my-namespace
 #create configmap in my-namespace
 kubectl apply -f mysql-configmap.yaml --namespace=my-namespace
 kubectl get configmap -n my-namespace
