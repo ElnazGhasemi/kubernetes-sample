@@ -27,7 +27,7 @@ minikube status
 
 #check kubernetes version
 
-kubctl version
+kubectl version
 
 #check nodes
 
