@@ -1,0 +1,3 @@
+kubectl get namespace
+kubectl cluster-info
+kubectl create namespace my-namespace
