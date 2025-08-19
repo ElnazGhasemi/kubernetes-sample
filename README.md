@@ -16,6 +16,16 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-a
 #start minikube
 
 minikube start
+# for running minikube cluster in other drivers use this (eg. virtualbox)
+minikube start --driver=virtualbox
+# get minikube ip
+minikube ip
+#connect to minikube server (node) if your using virtualbox
+ssh docker@<ip>
+#connect to minikube server (node) if your using docker
+minikube ssh
+
+kubectl cluster-info
 
 #check the list of clusters
 
